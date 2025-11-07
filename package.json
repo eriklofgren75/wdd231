@@ -5,14 +5,19 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "lint": "eslint *.js src/**/*.js",
     "start": "vite",
     "build": "vite build --emptyOutDir",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint-fix": "eslint *.js src/**/*.js --fix"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "vite": "^6.2.3"
+  },
+  "devDependencies": {
+    "@eslint/json": "^0.14.0"
   }
 }
